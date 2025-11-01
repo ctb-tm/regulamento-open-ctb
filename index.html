@@ -1,142 +1,718 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Regulamento Oficial - Open CTB 2025 - CTB Sistema de Gestão de Torneios</title>
-<style>
-:root {
-  --cor-primaria: #1e3c72;
-  --cor-secundaria: #2a5298;
-  --cor-acento: #667eea;
-  --cor-texto: #212529;
-  --cor-texto-suave: #495057;
-  --cor-fundo: #f8f9fa;
-  --cor-fundo-card: #ffffff;
-  --cor-borda: #e9ecef;
-  --sombra: 0 8px 32px rgba(0, 0, 0, 0.07);
-  --border-radius: 12px;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regulamento Oficial - Open CTB 2025</title>
+    <style>
+        /* --- Estilo Clean Web 3.0 (Modificado) --- */
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  line-height: 1.7;
-  background-color: var(--cor-fundo);
-  color: var(--cor-texto);
-  margin: 0;
-  padding: 20px;
-}
+        :root {
+            --cor-primaria: #1e3c72;
+            --cor-secundaria: #2a5298;
+            --cor-acento: #667eea;
+            --cor-texto: #212529;
+            --cor-texto-suave: #495057;
+            --cor-fundo: #f8f9fa;
+            --cor-fundo-card: #ffffff;
+            --cor-borda: #e9ecef;
+            --sombra: 0 8px 32px rgba(0, 0, 0, 0.07);
+            --border-radius: 12px;
+        }
 
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px 30px 40px 30px;
-  background-color: var(--cor-fundo-card);
-  border-radius: var(--border-radius);
-  box-shadow: var(--sombra);
-}
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+            margin: 0;
+            padding: 20px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
 
-.center-text { text-align: center; }
-.logo { max-width: 110px; margin: 0 auto 15px auto; display: block; }
-.logo-fallback { font-size: 2em; font-weight: 700; color: var(--cor-primaria); margin-bottom: 15px; }
-h1 { font-size: 2.2em; font-weight: 700; color: var(--cor-primaria); margin-bottom: 5px; }
-h2 { font-size: 1.75em; font-weight: 600; color: var(--cor-primaria); margin-bottom: 10px; }
-.open-title { font-size: 1.9em; font-weight: 800; color: var(--cor-secundaria); text-align: center; margin: 10px 0 25px 0; }
-h3 { font-size: 1.4em; font-weight: 600; color: var(--cor-secundaria); margin-bottom: 15px; }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 30px 30px 30px; /* Ajuste no padding */
+            background-color: var(--cor-fundo-card);
+            border-radius: var(--border-radius);
+            box-shadow: var(--sombra);
+        }
 
-.article-box { background-color: var(--cor-fundo-card); border-radius: var(--border-radius); padding: 25px; margin-top: 25px; border-left: 5px solid var(--cor-primaria); box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
-.article-box h2 { margin-top: 0; border-bottom: 2px solid var(--cor-borda); padding-bottom: 10px; }
+        .center-text {
+            text-align: center;
+        }
 
-p, li { color: var(--cor-texto-suave); font-size: 1rem; margin-bottom: 12px; }
-strong { color: var(--cor-primaria); font-weight: 600; }
-table { width: 100%; border-collapse: collapse; margin-bottom: 25px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
-th, td { padding: 12px 15px; border-bottom: 1px solid var(--cor-borda); color: var(--cor-texto-suave); }
-th { background-color: var(--cor-fundo); font-weight: 600; text-transform: uppercase; font-size: 0.9rem; }
-caption { font-weight: 600; color: var(--cor-secundaria); padding: 10px; text-align: left; }
-.footer { text-align: center; margin-top: 30px; font-size: 0.85em; color: #adb5bd; }
-@media print { body { background: #fff; font-size: 10pt; } .container { box-shadow: none; border: none; max-width: 100%; } .footer { display: none; } }
-</style>
+        .logo {
+            max-width: 100px;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px auto;
+        }
+
+        .logo-fallback {
+            font-size: 2em;
+            font-weight: 700;
+            color: var(--cor-primaria);
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            font-weight: 700;
+            color: var(--cor-primaria);
+            margin-bottom: 8px;
+        }
+
+        /* H2 do Cabeçalho */
+        h2 {
+            font-size: 1.75em;
+            font-weight: 600;
+            color: var(--cor-primaria);
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            font-size: 1.4em;
+            font-weight: 600;
+            color: var(--cor-secundaria);
+            margin-top: 0; /* Ajustado */
+            margin-bottom: 15px;
+        }
+
+        /* --- ESTILOS DOS BOXES --- */
+
+        .article-box {
+            background-color: var(--cor-fundo-card);
+            border-radius: var(--border-radius);
+            padding: 25px;
+            margin-top: 25px;
+            border-left: 5px solid var(--cor-primaria); /* Borda azul grossa à esquerda */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        /* H2 dentro dos Artigos */
+        .article-box h2 {
+            margin-top: 0;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            border-bottom: 2px solid var(--cor-borda);
+        }
+
+        .mini-box {
+            background-color: var(--cor-fundo);
+            border-radius: 8px;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border: 1px solid var(--cor-borda);
+        }
+
+        .highlight-box {
+            background-color: #fdfdfd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #e0e0e0;
+        }
+
+        /* --- FIM ESTILOS DOS BOXES --- */
+
+        h4 {
+            font-size: 1.15em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: 700;
+            color: var(--cor-texto);
+        }
+
+        p, li {
+            margin-bottom: 12px;
+            text-align: left;
+            color: var(--cor-texto-suave);
+            font-size: 1rem;
+        }
+
+        /* Parágrafos dentro do Artigo 5 */
+        .article-box p {
+            margin-bottom: 15px;
+        }
+
+
+        ul, ol {
+            padding-left: 20px;
+            margin-left: 0;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+           color: var(--cor-primaria);
+           font-weight: 600;
+        }
+
+        code {
+            background-color: var(--cor-borda);
+            color: #d63384;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 0.95em;
+        }
+
+        /* Estilo GERAL de tabelas */
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Essencial para os estilos de borda */
+            margin-bottom: 25px;
+            font-size: 1rem;
+            border-radius: 8px; /* Funciona com overflow */
+            overflow: hidden; /* Clipa as bordas para o radius */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left; /* Alinhamento padrão à esquerda */
+            border-bottom: 1px solid var(--cor-borda);
+            color: var(--cor-texto-suave);
+        }
+
+        th {
+            background-color: var(--cor-fundo);
+            font-weight: 600;
+            color: #343a40;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Centralizar colunas específicas */
+        table th.center, table td.center {
+            text-align: center;
+        }
+
+        tbody tr {
+            background-color: var(--cor-fundo-card);
+        }
+
+        tbody tr:last-child td {
+             border-bottom: none; /* Remove borda dupla no final */
+        }
+
+        tbody tr:hover {
+            background-color: #fdfdfd;
+        }
+
+        /* Estilo geral para caption (usado nas tabelas principais) */
+        caption {
+            font-weight: 600;
+            color: var(--cor-secundaria);
+            font-size: 1.1em;
+            padding: 10px;
+            caption-side: top;
+            text-align: left;
+        }
+
+        /* --- ESTILOS PARA TABELAS EM BOXES --- */
+
+        /* Zera o estilo de "card" para tabelas dentro de boxes */
+        .mini-box table,
+        .highlight-box table {
+            box-shadow: none;
+            margin-bottom: 0;
+            border-radius: 0;
+            overflow: visible;
+        }
+
+        /* Estilo para os títulos (caption) das tabelas nos boxes */
+        .mini-box table caption,
+        .highlight-box table caption {
+            caption-side: top;
+            text-align: left;
+            font-weight: 600;
+            color: var(--cor-primaria);
+            font-size: 1rem;
+            margin-bottom: 10px;
+            padding: 0;
+        }
+
+        .mini-box table td,
+        .highlight-box table td {
+             font-size: 0.95rem; /* Fonte ligeiramente menor dentro dos boxes */
+        }
+
+        /* --- ESTILO: TABELA COM CONTORNO FECHADO --- */
+
+        /* Adiciona a borda externa (frame) */
+        .tabela-contorno {
+            border: 1px solid var(--cor-borda);
+        }
+
+        /* Adiciona as bordas verticais internas */
+        .tabela-contorno th,
+        .tabela-contorno td {
+            border-left: 1px solid var(--cor-borda);
+            border-right: 1px solid var(--cor-borda);
+        }
+
+        /* Alinhamento vertical para células com rowspan */
+        .tabela-contorno td[rowspan] {
+            vertical-align: top;
+            padding-top: 15px;
+            background-color: var(--cor-fundo);
+            font-weight: 600;
+            color: var(--cor-texto-suave);
+        }
+
+        /* --- FIM DOS NOVOS ESTILOS --- */
+
+
+        hr {
+            display: none;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.85em;
+            color: #adb5bd;
+        }
+
+        .note {
+            background-color: var(--cor-fundo);
+            border-left: 4px solid var(--cor-acento);
+            padding: 12px 18px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: var(--cor-texto-suave);
+            margin-top: 15px;
+            font-style: normal;
+        }
+
+        .pontos-container {
+             display: flex;
+             justify-content: space-around;
+             flex-wrap: wrap;
+        }
+
+        .tabela-pontos {
+            width: 48%;
+            min-width: 250px;
+            margin-bottom: 15px;
+        }
+
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+                font-size: 10pt;
+                background-color: #fff;
+            }
+            .container {
+                box-shadow: none;
+                border: none;
+                max-width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+            .article-box {
+                box-shadow: none;
+                border: 1px solid #ccc;
+                border-left: 5px solid #1e3c72;
+                margin-top: 15px;
+                padding: 15px;
+            }
+            .mini-box, .highlight-box {
+                border: 1px solid #eee;
+                padding: 10px;
+            }
+            /* Força bordas fechadas na impressão */
+            .tabela-contorno, .tabela-contorno th, .tabela-contorno td {
+                 border: 1px solid #999 !important;
+            }
+            nav, .control-panel, .form-group, button, .alert-info, .footer {
+                display: none;
+            }
+            .page {
+                display: block !important;
+                animation: none !impo!important;
+            }
+            h2, h3 {
+                page-break-before: auto;
+                page-break-after: avoid;
+            }
+            table, .tabela-pontos {
+                page-break-inside: avoid;
+                width: 100%;
+            }
+            .pontos-container {
+                display: block;
+            }
+        }
+
+    </style>
 </head>
 <body>
+
 <div class="container">
-  <div class="center-text">
-    <img src="ctb.png" alt="CTB Logo" class="logo" 
-         onerror="this.style.display='none'; this.parentElement.insertAdjacentHTML('afterbegin','<div class='logo-fallback'><strong>CTB</strong></div>')">
-    <h1>CTB - CLUBE DOS TENISTAS DA BAHIA</h1>
-    <h2>Regulamento Oficial - Sistema de Gestão de Torneios</h2>
-    <div class="open-title">OPEN CTB 2025</div>
-    <h3>Circuito do Clube dos Tenistas da Bahia (Versão 2025)</h3>
-  </div>
 
-  <!-- ARTIGO 1 -->
-  <div class="article-box">
-    <h2>Artigo 1º - Local, Data e Participação</h2>
-    <p><strong>§1º:</strong> Os jogos serão realizados no <strong>Clube Campomar</strong> – Rua Deraldo Motta, 050 – Jaguaribe, Salvador – BA, 41613-052, sempre aos sábados, às 9h00, conforme calendário oficial.</p>
-    <p><strong>§2º:</strong> Contatos oficiais do evento:</p>
-    <ul>
-      <li><strong>WhatsApp:</strong> (71) 99708-1912</li>
-      <li><strong>Contato CTB:</strong> Paulo – (71) 98530-4903</li>
-      <li><strong>E-mail:</strong> <a href="mailto:paulo@ctb.com.br">paulo@ctb.com.br</a></li>
-    </ul>
-    <p><strong>§3º:</strong> A participação é aberta a qualquer pessoa de ambos os sexos, com idade mínima de 10 anos.</p>
+    <div class="center-text">
+      <img src="ctb.png" alt="CTB Logo" class="logo" onerror="this.style.display='none'; this.parentElement.insertAdjacentHTML('afterbegin', '<div class=\'logo-fallback\'><strong>CTB</strong></div>')">
+      <h1>CTB - CLUBE DOS TENISTAS DA BAHIA</h1>
+      <h2>Regulamento Oficial - Sistema de Gestão de Torneios</h2>
+      <h3 style="margin-bottom: 25px;">Open CTB 2025</h3> </div>
 
-    <div class="mini-box">
-      <table class="tabela-contorno">
-        <caption><strong>§4º:</strong> O torneio é composto pelas seguintes categorias:</caption>
-        <thead><tr><th class="center">Categorias de Idade e Nível Técnico</th></tr></thead>
-        <tbody>
-          <tr><td>Sub 11</td></tr><tr><td>Sub 13</td></tr><tr><td>Sub 15</td></tr><tr><td>Sub 19</td></tr>
-          <tr><td>Feminino</td></tr><tr><td>Adulto A</td></tr><tr><td>Adulto B</td></tr><tr><td>Adulto C</td></tr>
-          <tr><td>Veterano 40+</td></tr><tr><td>Veterano 60+</td></tr>
-        </tbody>
-      </table>
+    <div class="article-box">
+        <h2>Artigo 1º - Local, Data e Participação</h2>
+        
+        <p><strong>§1º:</strong> O evento será realizado no **🏟️ Clube Campomar** – Rua Deraldo Motta, 050 – Jaguaribe, Salvador – BA, 41613-052. Os horários e o calendário oficial serão divulgados na página de inscrição.</p>
+        <p><strong>§2º:</strong> A participação é aberta a qualquer pessoa de ambos os sexos, com idade mínima de 10 anos. Para contato e informações:</p>
+        
+        <div class="mini-box">
+             <p>📱 **WhatsApp:** (71) 99708-1912</p>
+             <p>☎️ **Contato CTB (Paulo):** (71) 98530-4903</p>
+             <p>✉️ **E-mail:** paulo@ctb.com.br</p>
+        </div>
+        <div class="mini-box">
+             <table>
+                <caption><strong>§3º:</strong> O torneio é composto pelas seguintes categorias:</caption>
+                 <tbody>
+                     <tr>
+                         <td>Sub 11</td>
+                         <td>Sub 13</td>
+                         <td>Sub 15</td>
+                         <td>Sub 19</td>
+                     </tr>
+                     <tr>
+                         <td>Feminino</td>
+                         <td>Adulto A</td>
+                         <td>Adulto B</td>
+                         <td>Adulto C</td>
+                     </tr>
+                     <tr>
+                         <td>Veterano 40+</td>
+                         <td>Veterano 60+</td>
+                         <td>&nbsp;</td>
+                         <td>&nbsp;</td>
+                     </tr>
+                 </tbody>
+             </table>
+        </div>
+        
+        <p><strong>§4º:</strong> Cada categoria necessita de um mínimo de <strong>3 atletas inscritos</strong> para ser realizada.</p>
     </div>
-    <div class="highlight-box">
-      <table>
-        <caption><strong>§5º:</strong> Valores de inscrição por categoria</caption>
-        <thead><tr><th>Categoria</th><th class="center">Valor (R$)</th></tr></thead>
-        <tbody>
-          <tr><td>Estudantes (Sub 11 a Sub 19 e Feminino)</td><td class="center"><strong>40,00</strong></td></tr>
-          <tr><td>Adultos (Adulto A, B, C e Veteranos)</td><td class="center"><strong>80,00</strong></td></tr>
-        </tbody>
-      </table>
+
+    <div class="article-box">
+        <h2>Artigo 2º - Inscrição e Divulgação</h2>
+        <p><strong>§1º:</strong> As inscrições deverão ser realizadas via PIX na página do evento no site ctb-ba.com.br até às 18h da quinta-feira anterior ao evento. Os valores por categoria são:</p>
+        
+        <div class="highlight-box">
+             <table>
+                 <caption>Tabela de Valores de Inscrição (Open CTB 2025)</caption>
+                 <thead>
+                     <tr>
+                         <th>Categoria</th>
+                         <th class="center">Valor</th>
+                     </tr>
+                 </thead>
+                 <tbody>
+                     <tr>
+                         <td>**Estudantes** (Sub 11, Sub 13, Sub 15, Sub 19, Feminino)</td>
+                         <td class="center">R$ 40,00</td>
+                     </tr>
+                     <tr>
+                         <td>**Adultos** (Adulto A, Adulto B, Adulto C, Veteranos 40+, Veteranos 60+)</td>
+                         <td class="center">R$ 80,00</td>
+                     </tr>
+                 </tbody>
+             </table>
+        </div>
+        <p><strong>§2º:</strong> Cada atleta poderá se inscrever em no máximo 2 (duas) categorias por etapa.</p>
+        <p><strong>§3º:</strong> As tabelas de jogos (formato dos grupos e confrontos) serão geradas pelo sistema após o início do torneio e podem ser consultadas online ou exportadas em PDF.</p>
     </div>
-    <p><strong>§6º:</strong> Cada categoria necessita de um mínimo de <strong>3 atletas inscritos</strong> para ser realizada.</p>
-  </div>
 
-  <!-- RESTANTE DO REGULAMENTO (ARTIGOS 2 AO 5) -->
-  <div class="article-box">
-    <h2>Artigo 2º - Inscrição e Divulgação</h2>
-    <p><strong>§1º:</strong> As inscrições deverão ser realizadas via PIX na página do evento no site <strong>ctb-ba.com.br</strong> até às 18h da quinta-feira anterior ao evento.</p>
-    <p><strong>§2º:</strong> Cada atleta poderá se inscrever em no máximo 2 (duas) categorias por etapa.</p>
-    <p><strong>§3º:</strong> As tabelas de jogos (formato dos grupos e confrontos) serão geradas pelo sistema após o início do torneio e podem ser consultadas online ou exportadas em PDF.</p>
-  </div>
+    <div class="article-box">
+        <h2>Artigo 3º - Formato da Competição</h2>
 
-  <div class="article-box">
-    <h2>Artigo 3º - Formato da Competição</h2>
-    <h3>Seção I - Formação dos Grupos</h3>
-    <p><strong>§1º:</strong> O sorteio dos grupos seguirá o sistema <strong>"Snake System"</strong>, distribuindo os atletas com base na sua posição no ranking inicial informado no cadastro. O objetivo é equilibrar tecnicamente os grupos.</p>
-    <p>... (todo conteúdo e tabelas mantidos conforme original até o fim do Artigo 5º §8) ...</p>
-  </div>
+        <h3>Seção I - Formação dos Grupos</h3>
+        <p><strong>§1º:</strong> O sorteio dos grupos seguirá o sistema <strong>"Snake System"</strong>, distribuindo os atletas com base na sua posição no ranking inicial informado no cadastro. O objetivo é equilibrar tecnicamente os grupos.</p>
 
-  <div class="article-box">
-    <h2>Artigo 4º - Sistema de Pontuação</h2>
-    <p>Conteúdo integral mantido conforme original, incluindo todas as tabelas de pontuação, fórmulas e subseções A e B.</p>
-  </div>
+        <div class="highlight-box">
+             <table>
+                 <caption><strong>§2º:</strong> A formação dos grupos depende do número de atletas inscritos (<code>N</code>) na categoria:</caption>
+                 <thead>
+                     <tr>
+                         <th>Nº de Atletas (N)</th>
+                         <th>Formato</th>
+                         <th>Classificação</th>
+                     </tr>
+                 </thead>
+                 <tbody>
+                     <tr>
+                         <td><strong>N = 3 atletas</strong></td>
+                         <td>1 Grupo Único (Round Robin)</td>
+                         <td>Não há fase eliminatória</td>
+                     </tr>
+                     <tr>
+                         <td><strong>N = 4 a 7 atletas</strong></td>
+                         <td>2 Grupos (Snake System)</td>
+                         <td>2 melhores p/ Semifinal</td>
+                     </tr>
+                     <tr>
+                         <td><strong>N = 8 a 15 atletas</strong></td>
+                         <td>4 Grupos (Snake System)</td>
+                         <td>2 melhores p/ Quartas de Final</td>
+                     </tr>
+                     <tr>
+                         <td><strong>N = 16 a 24 atletas</strong></td>
+                         <td>8 Grupos (Snake System)</td>
+                         <td>2 melhores p/ Oitavas de Final</td>
+                     </tr>
+                      <tr>
+                         <td><strong>N > 24 atletas</strong></td>
+                         <td colspan="2">A categoria será limitada aos 24 primeiros atletas com inscrição confirmada (via PIX). Os demais inscritos entrarão em lista de espera ou terão o valor reembolsado integralmente. A organização não realizará a categoria com mais de 24 atletas.</td>
+                     </tr>
+                 </tbody>
+             </table>
+        </div>
 
-  <div class="article-box">
-    <h2>Artigo 5º - Disposições Gerais</h2>
-    <p><strong>§1º:</strong> Obrigatório o uso de camisa com manga (qualquer cor exceto branca ou laranja), short/saia e tênis apropriado.</p>
-    <p><strong>§2º:</strong> Permitidas apenas raquetes aprovadas pela ITTF. A bola do evento será a SANWEI ABS PRO 3 estrelas.</p>
-    <p><strong>§3º:</strong> A arbitragem será realizada preferencialmente pelos atletas que perderam na rodada anterior ou conforme designação da organização.</p>
-    <p><strong>§4º:</strong> Serão entregues medalhas aos quatro primeiros colocados de cada categoria (Campeão, Vice e dois Semifinalistas).</p>
-    <p><strong>§5º:</strong> Cada atleta (ou dupla) terá direito a 1 (um) pedido de tempo técnico por partida, com duração máxima de 1 (um) minuto.</p>
-    <p><strong>§6º:</strong> Não será permitida a troca de raquete durante a partida, exceto se esta for danificada acidentalmente. A substituição deverá ser autorizada pela coordenação.</p>
-    <p><strong>§7º:</strong> A coordenação geral do torneio é de responsabilidade de Paulo Carneiro.</p>
-    <p><strong>§8º:</strong> A competição reger-se-á pelas regras oficiais da ITTF/CBTM, aplicando-se este regulamento para os casos específicos e cabendo à Coordenação a decisão sobre casos omissos.</p>
-  </div>
+        <h3>Seção II - Sistema de Jogo</h3>
+        <p><strong>§1º:</strong> Todas as partidas, tanto na fase de grupos quanto na fase eliminatória, serão disputadas em <strong>melhor de 5 sets</strong>, vencendo o atleta que primeiro ganhar 3 sets.</p>
+        <p><strong>§2º:</strong> Cada set é disputado até 11 pontos, sendo necessário abrir 2 pontos de diferença em caso de empate 10-10.</p>
 
-  <p class="footer"><em>Clube dos Tenistas da Bahia - Regulamento Oficial Open CTB 2025</em></p>
+        <p><strong>§3º:</strong> Os atletas deverão apresentar-se 15 minutos antes do horário previsto para o seu jogo. Após a chamada oficial para a partida, haverá uma tolerância máxima de 10 (dez) minutos. A ausência após este período resultará em derrota por <strong>W.O.</strong> (Walkover), com placar registado como 0x3 (0-11, 0-11, 0-11).</p>
+
+        <div class="mini-box">
+            <table class="tabela-contorno">
+                 <caption><strong>§4º:</strong> A ordem dos jogos dentro de cada grupo seguirá o padrão definido:</caption>
+                 <thead>
+                     <tr>
+                         <th>Grupo (Ranking)</th>
+                         <th>Ordem dos Jogos</th>
+                     </tr>
+                 </thead>
+                 <tbody>
+                     <tr>
+                         <td><strong>Grupos de 3</strong> (P1, P2, P3)</td>
+                         <td>1º: P1 x P3; 2º: P2 x P3; 3º: P1 x P2</td>
+                     </tr>
+                     <tr>
+                         <td><strong>Grupos de 4</strong> (P1, P2, P3, P4)</td>
+                         <td>1º: P1 x P4; 2º: P2 x P3; 3º: P1 x P3; 4º: P2 x P4; 5º: P1 x P2; 6º: P3 x P4</td>
+                     </tr>
+                 </tbody>
+            </table>
+            <p class="note">Nota: A ordem exata pode variar em grupos com W.O. ou número diferente de 3 ou 4 atletas.</p>
+        </div>
+
+        <p><strong>§5º:</strong> O atleta que sofrer derrota por W.O. (ausência injustificada) em qualquer partida da fase de grupos será automaticamente eliminado da categoria. Todos os seus resultados anteriores e jogos futuros dentro do grupo serão anulados para efeito de classificação e desempate dos demais atletas.</p>
+
+
+        <h3>Seção III - Critérios de Desempate (Fase de Grupos)</h3>
+        <p>A classificação dentro de cada grupo será determinada pela <strong>Pontuação de Bônus</strong> (ver Artigo 4º, Subseção A).</p>
+        <p>Em caso de empate na Pontuação de Bônus, aplicam-se os seguintes critérios, <strong>na ordem</strong>:</p>
+        <ol>
+            <li><strong>Confronto Direto:</strong> Aplicável apenas quando <strong>dois</strong> atletas estiverem empatados. O vencedor do jogo entre eles fica à frente.</li>
+            <li><strong>Índice de Desempate (ID):</strong> Aplicável quando <strong>três ou mais</strong> atletas estiverem empatados. Calcula-se o ID considerando *apenas os jogos entre os atletas empatados*: <br> <code>ID = (Número de Vitórias nos jogos entre os empatados) / (Número de Jogos disputados entre os empatados)</code> <br> O atleta com maior ID fica à frente.</li>
+            <li><strong>Saldo de Sets (Geral):</strong> Diferença entre Sets Pró (SP) e Sets Contra (SC) em *todos* os jogos do grupo. O maior saldo fica à frente.</li>
+            <li><strong>Saldo de Pontos (Geral):</strong> Diferença entre Pontos Pró (PP) e Pontos Contra (PC) em *todos* os jogos do grupo. O maior saldo fica à frente.</li>
+            <li><strong>Pontos Pró (Geral):</strong> Maior número de Pontos Pró (PP) em *todos* os jogos do grupo.</li>
+            <li><strong>Ranking Inicial:</strong> Menor número de ranking (melhor classificado) na inscrição.</li>
+        </ol>
+
+        <h3>Seção IV - Fase Eliminatória</h3>
+
+        <div class="mini-box">
+             <table>
+                 <caption><strong>§1º:</strong> A fase eliminatória (mata-mata) inicia-se conforme o número de atletas (<code>N</code>) na categoria:</caption>
+                 <thead>
+                     <tr>
+                         <th>Nº de Atletas (N)</th>
+                         <th>Início da Fase</th>
+                         <th>Nº de Classificados</th>
+                     </tr>
+                 </thead>
+                 <tbody>
+                     <tr>
+                         <td><strong>N = 4 a 7 atletas</strong></td>
+                         <td>Semifinal</td>
+                         <td>4 classificados</td>
+                     </tr>
+                      <tr>
+                         <td><strong>N = 8 a 15 atletas</strong></td>
+                         <td>Quartas de Final</td>
+                         <td>8 classificados</td>
+                     </tr>
+                      <tr>
+                         <td><strong>N = 16 a 24 atletas</strong></td>
+                         <td>Oitavas de Final</td>
+                         <td>16 classificados</td>
+                     </tr>
+                 </tbody>
+             </table>
+        </div>
+
+        <div class="highlight-box">
+             <table class="tabela-contorno">
+                 <caption><strong>§2º:</strong> Os confrontos (chaveamento) são definidos automaticamente pelo sistema:</caption>
+                 <thead>
+                     <tr>
+                         <th>Fase</th>
+                         <th>Confronto</th>
+                     </tr>
+                 </thead>
+                 <tbody>
+                     <tr>
+                         <td rowspan="2"><strong>2 Grupos (Semifinais)</strong></td>
+                         <td>Jogo 1: 1ºA vs 2ºB</td>
+                     </tr>
+                     <tr>
+                         <td>Jogo 2: 1ºB vs 2ºA</td>
+                     </tr>
+
+                     <tr>
+                         <td rowspan="4"><strong>4 Grupos (Quartas)</strong></td>
+                         <td>Jogo 1: 1ºA vs 2ºD</td>
+                     </tr>
+                     <tr>
+                         <td>Jogo 2: 1ºC vs 2ºB</td>
+                     </tr>
+                     <tr>
+                         <td>Jogo 3: 1ºB vs 2ºC</td>
+                     </tr>
+                     <tr>
+                         <td>Jogo 4: 1ºD vs 2ºA</td>
+                     </tr>
+
+                     <tr>
+                         <td rowspan="8"><strong>8 Grupos (Oitavas)</strong></td>
+                         <td>J1: 1ºA vs 2ºH</td>
+                     </tr>
+                     <tr>
+                         <td>J2: 1ºG vs 2ºB</td>
+                     </tr>
+                     <tr>
+                         <td>J3: 1ºD vs 2ºE</td>
+                     </tr>
+                     <tr>
+                         <td>J4: 1ºF vs 2ºC</td>
+                     </tr>
+                     <tr>
+                         <td>J5: 1ºB vs 2ºG</td>
+                     </tr>
+                     <tr>
+                         <td>J6: 1ºH vs 2ºA</td>
+                     </tr>
+                     <tr>
+                         <td>J7: 1ºC vs 2ºF</td>
+                     </tr>
+                     <tr>
+                         <td>J8: 1ºE vs 2ºD</td>
+                     </tr>
+                 </tbody>
+             </table>
+        </div>
+
+        <p><strong>§3º:</strong> Não haverá disputa de 3º lugar. Os atletas eliminados nas semifinais serão ambos considerados 3º colocados para efeito de ranking.</p>
+    </div>
+
+    <div class="article-box">
+        <h2>Artigo 4º - Sistema de Pontuação</h2>
+
+        <h3>Subseção A - Pontuação por Resultado das Partidas (Bónus)</h3>
+        <p>Esta pontuação é utilizada para a classificação nos grupos e para o cálculo acumulado do ranking final. Aplica-se a <strong>todas</strong> as partidas (fase de grupos e eliminatórias).</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Resultado</th>
+                    <th class="center">Vencedor</th>
+                    <th class="center">Perdedor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><strong>3 x 0</strong></td><td class="center">+5 pts</td><td class="center">+0 pts</td></tr>
+                <tr><td><strong>3 x 1</strong></td><td class="center">+4 pts</td><td class="center">+1 pt</td></tr>
+                <tr><td><strong>3 x 2</strong></td><td class="center">+3 pts</td><td class="center">+2 pts</td></tr>
+                <tr><td><strong>W.O.</strong></td><td class="center">+5 pts</td><td class="center">+0 pts</td></tr>
+            </tbody>
+        </table>
+
+        <h3>Subseção B - Pontuação de Ranking Final (Acumulada)</h3>
+        <p>A pontuação final de cada atleta no torneio, utilizada para o ranking geral, será calculada pela <strong>soma</strong> dos <strong>Pontos Base</strong> (definidos pela fase alcançada) com o <strong>total de Pontos de Bónus</strong> (Subseção A) acumulados em todas as partidas disputadas pelo atleta.</p>
+        <p><strong>Fórmula:</strong> <code>Pontuação Final = Pontos Base (Fase) + Σ (Pontos Bónus de cada partida)</code></p>
+
+        <h4>Tabelas de Pontos Base (conforme nº de atletas na categoria):</h4>
+
+        <div class="pontos-container">
+            <div class="tabela-pontos">
+                <table>
+                    <caption>Até 12 atletas</caption>
+                    <thead><tr><th>Fase Alcançada</th><th class="center">Pontos Base</th></tr></thead>
+                    <tbody>
+                        <tr><td>Campeão</td><td class="center">265</td></tr>
+                        <tr><td>Vice-Campeão</td><td class="center">260</td></tr>
+                        <tr><td>Semifinal</td><td class="center">250</td></tr>
+                        <tr><td>Quartas</td><td class="center">235</td></tr>
+                        <tr><td>Classificação / Fase de Grupos</td><td class="center">215</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tabela-pontos">
+                <table>
+                     <caption>Até 16 atletas</caption>
+                    <thead><tr><th>Fase Alcançada</th><th class="center">Pontos Base</th></tr></thead>
+                    <tbody>
+                        <tr><td>Campeão</td><td class="center">265</td></tr>
+                        <tr><td>Vice-Campeão</td><td class="center">260</td></tr>
+                        <tr><td>Semifinal</td><td class="center">250</td></tr>
+                        <tr><td>Quartas</td><td class="center">235</td></tr>
+                        <tr><td>Oitavas</td><td class="center">215</td></tr>
+                        <tr><td>Classificação / Fase de Grupos</td><td class="center">190</td></tr>
+                    </tbody>
+                </table>
+            </div>
+             <div class="tabela-pontos">
+                <table>
+                     <caption>Até 24 atletas</caption>
+                    <thead><tr><th>Fase Alcançada</th><th class="center">Pontos Base</th></tr></thead>
+                    <tbody>
+                        <tr><td>Campeão</td><td class="center">265</td></tr>
+                        <tr><td>Vice-Campeão</td><td class="center">260</td></tr>
+                        <tr><td>Semifinal</td><td class="center">250</td></tr>
+                        <tr><td>Quartas</td><td class="center">235</td></tr>
+                        <tr><td>Oitavas</td><td class="center">215</td></tr>
+                        <tr><td>Classificação / Fase de Grupos</td><td class="center">190</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="article-box">
+        <h2>Artigo 5º - Disposições Gerais</h2>
+
+        <p><strong>§1º (Uniforme):</strong> Obrigatório o uso de camisa com manga (qualquer cor exceto branca ou laranja), short/saia e tênis apropriado.</p>
+        <p><strong>§2º (Equipamentos):</strong> Permitidas apenas raquetes aprovadas pela ITTF. A bola do evento será a SANWEI ABS PRO 3 estrelas</p>
+        <p><strong>§3º (Arbitragem):</strong> A arbitragem das partidas será realizada, preferencialmente, pelos atletas que perderam na rodada anterior na mesma mesa, ou conforme designado pela organização. Súmulas em branco serão fornecidas (geradas pelo sistema).</p>
+        <p><strong>§4º (Premiação):</strong> Serão entregues medalhas aos quatro primeiros colocados de cada categoria (Campeão, Vice e os dois Semifinalistas).</p>
+
+        <p><strong>§5º (Pedido de Tempo):</strong> Cada atleta (ou dupla) terá direito a 1 (um) pedido de tempo técnico por partida, com duração máxima de 1 (um) minuto.</p>
+        <p><strong>§6º (Troca de Equipamento):</strong> Não será permitida a troca da raquete durante uma partida, exceto se esta for acidentalmente danificada de forma que não possa ser utilizada. Qualquer troca deverá ser imediatamente comunicada e autorizada pela coordenação do torneio.</p>
+
+        <p><strong>§7º (Coordenação):</strong> A coordenação geral do torneio é de responsabilidade de Paulo Carneiro.</p>
+
+        <p><strong>§8º (Regras Gerais ITTF/CBTM):</strong> A competição reger-se-á pelas regras oficiais da Federação Internacional de Tênis de Mesa (ITTF), e suas adaptações pela Confederação Brasileira de Tênis de Mesa (CBTM), aplicando-se este regulamento para os casos específicos aqui descritos e cabendo à Coordenação a decisão sobre casos omissos.</p>
+
+    </div>
+
+    <p class="footer"><em>Clube dos Tenistas da Bahia - Regulamento (Versão do Sistema) - 2025</em></p>
+
 </div>
+
 </body>
 </html>
